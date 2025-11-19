@@ -1,0 +1,19 @@
+{
+  "name": "react-practice",
+  "version": "1.0.0",
+  "description": "Advanced React concpets",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thowfik-softdev/Advance-react.git"
+  },
+  "keywords": [],
+  "author": "Thowfik Juhair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thowfik-softdev/Advance-react/issues"
+  },
+  "homepage": "https://github.com/thowfik-softdev/Advance-react#readme"
+}
