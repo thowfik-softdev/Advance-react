@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/thowfik-softdev/Advance-react/issues"
   },
-  "homepage": "https://github.com/thowfik-softdev/Advance-react#readme"
+  "homepage": "https://github.com/thowfik-softdev/Advance-react#readme",
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "browserslist": [
+    "last 2 chrome version"
+  ]
 }
