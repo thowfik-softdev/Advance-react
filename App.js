@@ -1,38 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child 1" }, [
-    React.createElement("h1", {}, "I'm an h1 tag"),
-    React.createElement("h2", {}, "I'm an h2 tag"),
-  ]),
-  React.createElement("div", { id: "child 2" }, [
-    React.createElement("h1", {}, "I'm an h1 tag"),
-    React.createElement("h2", {}, "I'm an h2 tag"),
-  ]),
-]);
+//heading
+const heading = React.createElement("h1", { id: "heading" }, "Hello React!");
+console.log(heading); // return object
+
+//JSX - HTML like or XML like syntax, JSX is not html inside js
+const jsxHeading = <h1 id="heading">Hello from JSX!</h1>;
+console.log(jsxHeading); // return object
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
-console.log(root);
-root.render(parent);
-
-/* 
-console.log(heading); // returns an object
-
-{
-  $$typeof: Symbol(react.element),
-  key: null,
-  ref: null,
-  type: "h1",
-  props: {
-    id: "heading",
-    children: "Hello from React"
-  },
-  _owner: null,
-  _store: {
-    validated: false
-  },
-  _self: null,
-  _source: null
-} */
+root.render(jsxHeading);
