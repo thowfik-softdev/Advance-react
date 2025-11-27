@@ -1,14 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-//heading
-const heading = React.createElement("h1", { id: "heading" }, "Hello React!");
-console.log(heading); // return object
+const heading = (
+  <h1 id="heading" tabIndex="5">
+    Hello from JSX!
+  </h1>
+);
 
-//JSX - HTML like or XML like syntax, JSX is not html inside js
-//JS - Transiled before it reaches the JS engine
-const jsxHeading = <h1 id="heading">Hello from JSX!</h1>;
-console.log(jsxHeading); // return object
+// React Functional Component
+const HeadingComponent = () => {
+  return <h1>React Functional Component</h1>;
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(jsxHeading);
+root.render(<HeadingComponent />); // root.render(HeadingComponent());
