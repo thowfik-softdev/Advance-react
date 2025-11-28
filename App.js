@@ -1,8 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+const elem = <div>Element</div>
+
 const title = (
   <h1 id="heading" tabIndex="5">
+    {elem}
     Hello from JSX!
   </h1>
 );
