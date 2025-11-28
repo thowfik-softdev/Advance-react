@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const heading = (
+const title = (
   <h1 id="heading" tabIndex="5">
     Hello from JSX!
   </h1>
@@ -9,7 +9,12 @@ const heading = (
 
 // React Functional Component
 const HeadingComponent = () => {
-  return <h1>React Functional Component</h1>;
+  return (
+    <div id="container">
+      {title}
+      <h1>React Functional Component</h1>
+    </div>
+  );
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
